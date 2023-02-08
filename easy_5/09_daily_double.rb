@@ -1,6 +1,6 @@
 def crunch(str)
   str.chars.each_with_index do |char, index| 
-    char.clear if index > 0 && char == str[index - 1]  
+    char.clear if char == str[index + 1]  
   end.join
 end
 
