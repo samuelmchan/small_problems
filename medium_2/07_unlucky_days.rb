@@ -1,15 +1,15 @@
 require 'date'
 
 def friday_13th(year)
-  date = Date.new(year, 1, 1)
+  date = Date.new(year)
   counter = 0
   while date.year == year
-    counter += 1 if date.friday? && date.year == 13
+    counter += 1 if date.friday? && date.day == 13
     date = date.next
   end
   counter
 end
 
-p friday_13th(2015) == 3
-p friday_13th(1986) == 1
-p friday_13th(2019) == 2
+friday_13th(2015) == 3
+friday_13th(1986) == 1
+friday_13th(2019) == 2

@@ -6,9 +6,9 @@ def block_word?(str)
   end 
 end
 
-p block_word?('BATCH')
-p block_word?('BUTCH')
-p block_word?('jest')
-p block_word?('BATCHB')
-p block_word?('BUTCHB')
-p block_word?('BBBBBBBBATCH')
+p block_word?('BATCH') == true
+p block_word?('BUTCH') == false
+p block_word?('jest') == true
+p block_word?('BATCHB') == false
+p block_word?('BUTCHB') == false
+p block_word?('BBBBBBBBATCH') == false

@@ -1,4 +1,4 @@
-text = File.read('frankenstein.txt')
+text = IO.read('frankenstein.txt')
 
 def longest_sentence(str)
   sentences = str.split(/[.?!]/)

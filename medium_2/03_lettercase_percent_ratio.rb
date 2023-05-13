@@ -49,7 +49,7 @@ def letter_percentages(str)
   }
   multiplier = 100.0 / str.size
   hash.each do |key, value| 
-    hash[key] = (multiplier * value).round(2)
+    hash[key] = multiplier * value
   end  
 end
 
