@@ -1,5 +1,5 @@
 def rotate_array(arr)
-  arr.map.with_index do |element, index|
+  arr.map.with_index do |_, index|
     arr[index - (arr.size - 1)]
   end
 end
