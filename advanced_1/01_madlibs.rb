@@ -7,4 +7,4 @@ replacement_words = {
 }
 
 
-puts format(text, replacement_words[])
+puts format(text, replacement_words)
